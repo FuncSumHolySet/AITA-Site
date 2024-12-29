@@ -3,58 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AITA App - Coming Soon</title>
+    <title>AITA App - Welcome</title>
     <style>
+        /* General Page Styling */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #2C2C2E; /* Dark Grey Background */
+            color: #FFFFFF; /* White Text */
         }
+
+        /* Header Styling */
         header {
-            background-color: #4caf50;
+            background-color: #4CAF50; /* Green Header */
             color: white;
             padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
         }
-        section {
-            margin: 40px;
+
+        /* Hero Section */
+        .hero {
+            margin: 50px auto;
+            padding: 40px;
         }
-        button {
-            background-color: #4caf50;
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons Section */
+        .buttons {
+            margin: 20px;
+        }
+
+        .buttons button {
+            background-color: #4CAF50;
             color: white;
             border: none;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            border-radius: 4px;
+            margin: 10px;
         }
+
+        .buttons button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #3A3A3C; /* Slightly lighter grey */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+        }
+
+        /* Footer Styling */
         footer {
             margin-top: 40px;
-            color: #777;
+            padding: 20px;
+            color: #CCCCCC;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>AITA App</h1>
-        <p>Coming Soon to the App Store!</p>
+        Welcome to AITA App
     </header>
-    <section>
+
+    <section class="hero">
+        <h1>Your Go-To App for AITA Stories</h1>
+        <p>Join our community and get instant feedback on your dilemmas.</p>
+        <div class="buttons">
+            <button onclick="window.location.href='https://apps.apple.com'">Download App</button>
+            <button onclick="window.location.href='terms.html'">Terms of Service</button>
+            <button onclick="window.location.href='privacy.html'">Privacy Policy</button>
+        </div>
+    </section>
+
+    <section class="section">
         <h2>About the App</h2>
-        <p>The ultimate app to settle your "Am I The Asshole?" dilemmas with AI-generated insights.</p>
+        <p>
+            AITA App helps you determine if you're in the right or the wrong in various situations. 
+            Submit your story, get instant feedback.
+        </p>
     </section>
-    <section>
-        <h2>Stay Updated</h2>
-        <p>Follow us on social media for updates:</p>
-        <button onclick="window.open('https://twitter.com/yourhandle', '_blank')">Follow on Twitter</button>
+
+    <section class="section">
+        <h2>Why Choose Us?</h2>
+        <p>
+            - Instant Feedback<br>
+            - Easy-to-Use Interface<br>
+            - Community-Driven Insights
+        </p>
     </section>
-    <section>
-        <h2>Legal</h2>
-        <a href="https://yourusername.github.io/AITA-ToS/">Terms of Service</a> |
-        <a href="https://yourusername.github.io/PrivacyPolicy/">Privacy Policy</a>
-    </section>
+
     <footer>
-        &copy; 2024 AITA App. All Rights Reserved.
+        © 2024 AITA App. All Rights Reserved. |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="privacy.html">Privacy Policy</a>
     </footer>
 </body>
 </html>
